@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title">Homework Day1 DOM</h1>
+
+    <script>
+        const titleElement = document.querySelector("#title");
+        titleElement.textContent = "HW: Introduction to DOM";
+    </script>
+
+  
+    <p id="name">Ozinizdin tolyq aty-jonynyz</p>
+
+    <script>
+      
+        const nameElement = document.getElementById("name");
+        nameElement.textContent = "Ерболат Бейсенов"; // Өз атыңызды енгізіңіз
+    </script>
+
+
+    <ul>
+        <li class="hobby">Coding</li>
+        <li class="hobby">Teaching</li>
+        <li class="hobby">Reading</li>
+    </ul>
+
+    <script>
+        
+        const hobbies = document.getElementsByClassName("hobby");
+        hobbies[0].innerHTML = "<b>Programming</b>"; // 1-ші хобби
+        hobbies[1].innerHTML = "<b>Playing Chess</b>"; // 2-ші хобби
+        hobbies[2].innerHTML = "<b>Photography</b>"; // 3-ші хобби
+    </script>
+
+
+
+    <script src="10.home.js"></script>
+</body>
+</html>
